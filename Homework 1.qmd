@@ -1,6 +1,6 @@
 ---
 title: "Homework one"
-author: "Colm Roche"
+author: "Colm J Roche"
 format: html
 editor: visual
 execute: 
