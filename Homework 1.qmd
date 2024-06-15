@@ -1,0 +1,26 @@
+---
+title: "Homework 1"
+author: "Colm Roche"
+format: html
+editor: visual
+execute: 
+  eval: true
+  echo: false
+---
+
+### Cars data
+
+For this homework the **mtcars** package is loaded in and the the mpg variable is plotted against the weight variable. The plot shows that there is a negative relationship between the miles per gallon of a car and its weight. In the figure, automatic cars are represented in [red]{style="color: red;"}, and manual in [green]{style="color: green;"}.
+
+```{r}
+
+#| label: mpg by weight
+# the mtcars data is loaded in
+data(mtcars)
+# the mpg and weight are plotted with colours and axis lables added to the plot.
+plot(mtcars$mpg, mtcars$wt, col = (mtcars$am + 2), pch = 19, 
+     xlab = "miles per gallon", ylab = "weight") 
+# A legend is added to the plot
+legend("topright", legend = c("Automatic", "Manual"), col = 2:3, pch = 19)
+
+```
